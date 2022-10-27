@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1802838, g: 0.22571397, b: 0.3069231, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028381, g: 0.225714, b: 0.3069231, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -855,7 +855,7 @@ HingeJoint:
   m_ConnectedAnchor: {x: -0.57500005, y: 0.19000006, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 20
+    spring: 100
     damper: 0
     targetPosition: 0
   m_UseMotor: 0
@@ -865,8 +865,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -45
-    max: 45
+    min: -25
+    max: 25
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -1146,7 +1146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491831891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.02, y: 0.585, z: 0.03}
+  m_LocalPosition: {x: -1.811, y: 0.547, z: 0.03}
   m_LocalScale: {x: 0.48893, y: 0.48893, z: 0.48893}
   m_Children: []
   m_Father: {fileID: 0}
