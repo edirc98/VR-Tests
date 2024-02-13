@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1802838, g: 0.22571397, b: 0.3069231, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -195,6 +195,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 534974035450512290, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 709631088498537900, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 972450097536755744, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -207,6 +215,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 961415397}
+    - target: {fileID: 2035080543478284105, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3296489348777206515, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -225,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4306734267234782666, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.25
+      value: 3.334
       objectReference: {fileID: 0}
     - target: {fileID: 4306734267234782666, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -259,10 +271,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1481709851}
+    - target: {fileID: 5527851820696608413, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583917347341332025, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5914149315246287038, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 961415397}
+    - target: {fileID: 6195045194343408347, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_CameraType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6270976638711758235, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -275,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1481709851}
+    - target: {fileID: 8028872958663841803, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8311814390739244072, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -291,6 +319,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1959214250}
+    - target: {fileID: 9140553654427444954, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb71358a35d4d24cb1898a0af8342a6, type: 3}
 --- !u!1 &476436194
@@ -466,13 +498,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626521146}
-  m_LocalRotation: {x: -0.10938074, y: -0.87542665, z: 0.40821818, w: -0.23456775}
+  m_LocalRotation: {x: -0.40821844, y: 0.2345653, z: -0.10937959, w: -0.8754273}
   m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -210, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -389.999, z: 0}
 --- !u!1 &677300554
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,8 +748,12 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -744,6 +780,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 1
   m_HideControllerOnSelect: 0
+  m_AllowHoveredActivate: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -777,6 +814,7 @@ MonoBehaviour:
   m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
+  m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
   m_Acceleration: 9.8
@@ -794,7 +832,6 @@ MonoBehaviour:
     m_Bits: 96
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
-  m_KeepSelectedTargetValid: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
@@ -819,7 +856,8 @@ MonoBehaviour:
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
   m_ModelPrefab: {fileID: 0}
-  m_ModelTransform: {fileID: 0}
+  m_ModelParent: {fileID: 0}
+  m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
@@ -971,8 +1009,12 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1023,6 +1065,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 0
+  m_AllowHoveredActivate: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -1069,7 +1112,8 @@ MonoBehaviour:
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
   m_ModelPrefab: {fileID: 0}
-  m_ModelTransform: {fileID: 0}
+  m_ModelParent: {fileID: 0}
+  m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
@@ -1089,7 +1133,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45298
+  m_Name: pb_Mesh-34072
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1100,8 +1144,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.05, y: 1.5, z: -0.05}
+      m_Extent: {x: 0.05, y: 1.5, z: 0.05}
   m_Shapes:
     vertices: []
     shapes: []
@@ -1403,7 +1447,8 @@ MonoBehaviour:
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
   m_ModelPrefab: {fileID: 0}
-  m_ModelTransform: {fileID: 0}
+  m_ModelParent: {fileID: 0}
+  m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
@@ -1446,8 +1491,12 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1522,6 +1571,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 0
+  m_AllowHoveredActivate: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -1661,7 +1711,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45310
+  m_Name: pb_Mesh-34084
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1672,8 +1722,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.05, y: 1.5, z: -0.05}
+      m_Extent: {x: 0.05, y: 1.5, z: 0.05}
   m_Shapes:
     vertices: []
     shapes: []
@@ -1855,7 +1905,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh40154
+  m_Name: pb_Mesh71294
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2270,8 +2320,12 @@ MonoBehaviour:
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2298,6 +2352,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 0
+  m_AllowHoveredActivate: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2331,6 +2386,7 @@ MonoBehaviour:
   m_LineType: 1
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
+  m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 8
   m_Acceleration: 9.8
@@ -2348,7 +2404,6 @@ MonoBehaviour:
     m_Bits: 23
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
-  m_KeepSelectedTargetValid: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
@@ -2373,7 +2428,8 @@ MonoBehaviour:
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
   m_ModelPrefab: {fileID: 0}
-  m_ModelTransform: {fileID: 0}
+  m_ModelParent: {fileID: 0}
+  m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
@@ -2443,6 +2499,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1015
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
   m_Antialiasing: 1
   m_AntialiasingQuality: 2
@@ -2562,6 +2619,7 @@ MonoBehaviour:
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
+  m_DelayTime: 0
   m_TurnUsage: 0
   m_Controllers:
   - {fileID: 1427919029}
@@ -2631,6 +2689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 0}
+  m_DelayTime: 0
 --- !u!114 &1925404636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2644,7 +2703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Timeout: 10
-  m_XRRig: {fileID: 0}
+  m_XROrigin: {fileID: 0}
 --- !u!114 &1925404637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2657,12 +2716,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7448815bd5148434682b3d931066cd10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RigBaseGameObject: {fileID: 1925404630}
+  m_Camera: {fileID: 0}
+  m_OriginBaseGameObject: {fileID: 1925404630}
   m_CameraFloorOffsetObject: {fileID: 2062791050}
-  m_CameraGameObject: {fileID: 1891100778}
-  m_TrackingOriginMode: 1
-  m_TrackingSpace: 3
+  m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.7
+  m_CameraGameObject: {fileID: 1891100778}
 --- !u!4 &1925404638
 Transform:
   m_ObjectHideFlags: 0
@@ -2684,7 +2743,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45322
+  m_Name: pb_Mesh-34096
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2695,8 +2754,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.05, y: 1.5, z: -0.05}
+      m_Extent: {x: 0.05, y: 1.5, z: 0.05}
   m_Shapes:
     vertices: []
     shapes: []
@@ -2942,7 +3001,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-45286
+  m_Name: pb_Mesh-34060
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2953,8 +3012,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0.05, y: 1.5, z: -0.05}
+      m_Extent: {x: 0.05, y: 1.5, z: 0.05}
   m_Shapes:
     vertices: []
     shapes: []
